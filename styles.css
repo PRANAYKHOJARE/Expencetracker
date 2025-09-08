@@ -1,0 +1,289 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #000; /* full black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Center container */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Card / Box */
+.expense-box {
+  width: 90%;
+  max-width: 500px;
+  background: #1a1a1a; /* dark box */
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(108, 180, 255, 0.3);
+  text-align: center;
+}
+
+/* Headings */
+h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+#expense-form {
+  display: flex;
+  gap: 10px; /* space between elements */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* wrap on smaller screens */
+  margin-bottom: 20px;
+}
+
+#expense-form input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #333;
+  color: #fff;
+  font-size: 16px;
+  flex: 1; /* inputs take equal space */
+}
+
+#expense-form input::placeholder {
+  color: #bbb;
+}
+
+#expense-form button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  background: #6cb4ff;
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  flex-shrink: 0; /* button size stays constant */
+  transition: all 0.2s ease;
+}
+
+#expense-form button:hover {
+  background: #5aa0e0;
+  transform: translateY(-2px);
+}
+
+/* Expense List */
+#expense-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+#expense-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: #2b2b2b;
+  color: #fff;
+  font-size: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#expense-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(108, 180, 255, 0.3);
+}
+
+#expense-list li span {
+  color: #6cb4ff;
+  font-weight: 500;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: #ff4d4f;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.delete-btn:hover {
+  background: #d9363e;
+}
+
+/* Total */
+#total {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+#total-amount {
+  color: #6cb4ff; /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  /* Center container */
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Expense Box */
+  .expense-box {
+    background: #1e1e1e;
+    padding: 30px 25px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.6);
+    text-align: center;
+  }
+
+  /* Headings */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #6cb4ff;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin: 20px 0;
+  }
+
+  /* Form - single row */
+  #expense-form {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #expense-form input {
+    flex: 1;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: none;
+    background: #333;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  #expense-form input::placeholder {
+    color: #bbb;
+  }
+
+  #expense-form button {
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #6cb4ff;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.25s ease;
+  }
+
+  #expense-form button:hover {
+    background: #5aa0e0;
+    transform: translateY(-2px);
+  }
+
+  /* Expense List */
+  #expense-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  #expense-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: #2b2b2b;
+    font-size: 15px;
+  }
+
+  #expense-list li span {
+    font-weight: 500;
+    color: #6cb4ff;
+  }
+
+  /* Delete Button */
+  .delete-btn {
+    background: #ff4d4f;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+
+  .delete-btn:hover {
+    background: #d9363e;
+  }
+
+  /* Total Section */
+  #total {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: right;
+  }
+
+  #total-amount {
+    color: #6cb4ff;
+    font-size: 18px;
+  }
+
+  margin-left: 8px;
+}
